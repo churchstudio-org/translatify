@@ -1,0 +1,34 @@
+{
+  "name": "translatify",
+  "version": "0.0.1",
+  "description": "A translation module for parallel corpus.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --declaration",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "test": "mocha --delay -r ts-node/register **/*.test.ts > test.log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucaslannes/translatify.git"
+  },
+  "author": "Lucas Lannes",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/lucaslannes/translatify/issues"
+  },
+  "homepage": "https://github.com/lucaslannes/translatify#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.4.8",
+    "chai": "^4.3.4",
+    "fs-extra": "^10.0.0",
+    "lodash": "^4.17.21",
+    "mocha": "^9.0.3",
+    "ts-node": "^10.1.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
